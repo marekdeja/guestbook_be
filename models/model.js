@@ -9,6 +9,10 @@ const guestBookDataSchema = new mongoose.Schema({
     required: true,
     type: String,
   },
+  entryDate: {
+    required: true,
+    type: String,
+  },
 });
 
 module.exports = mongoose.model("GuestBookData", guestBookDataSchema);

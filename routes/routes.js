@@ -8,6 +8,7 @@ router.post("/postEntry", async (req, res) => {
   const data = new Model({
     userName: req.body.userName,
     userText: req.body.userText,
+    entryDate: req.body.entryDate,
   });
 
   try {
