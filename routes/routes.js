@@ -13,7 +13,9 @@ router.post("/postEntry", async (req, res) => {
 
   try {
     const dataToSave = await data.save();
-    res.status(200).json(dataToSave);
+    const allData = await Model.find();
+    const responseData = { ...dataToSave, allData };
+    res.status(200).json(responseData);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
