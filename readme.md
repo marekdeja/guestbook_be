@@ -1,4 +1,7 @@
-Simpre backend for a guest book
+Example for a guestbook with React and Node.js.
+Backend.
+
+Contact me at: marekdeja.com
 
 Install dependencies and a create **.env** file with:
-DATABASE_URL = _your database url_
+DATABASE*URL = \_your database url*
